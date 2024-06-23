@@ -11,7 +11,8 @@
         <h3 class="text-white text-center">Laravel 11 CRUD</h3>
         </div>
         <div class="container">
-            <form action="{{route('product.store')}}" method="post">
+            <a href="{{route('products')}}" class=" btn btn-dark mt-4">Show All</a>
+            <form enctype="multipart/form-data" action="{{route('product.store')}}" method="post">
                 @csrf
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10">
